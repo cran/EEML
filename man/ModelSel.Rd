@@ -30,13 +30,13 @@ Model3<- as.ts(rnorm(200,100,50))
 Model4<- as.ts(rnorm(200,100,50))
 Model5<- as.ts(rnorm(200,100,50))
 DF <- cbind(Actual, Model1,Model2,Model3,Model4,Model5)
-SelModel<-ModelSel(df=DF, Alpha=0.2, K=NULL)
+SelModel<-ModelSel(df=DF, Alpha=0.2, K=1000)
 
 }
 \references{
 \itemize{
 \item Paul, R.K., Das, T. and Yeasin, M., 2023. Ensemble of time series and machine learning model for forecasting volatility in agricultural prices. National Academy Science Letters, 46(3), pp.185-188.
 \item Yeasin, M. and Paul, R.K., 2024. OptiSembleForecasting: optimization-based ensemble forecasting using MCS algorithm and PCA-based error index. The Journal of Supercomputing, 80(2), pp.1568-1597.
-\item  Hansen PR, Lunde A, Nason JM (2011). The model confidence set. Econometrica, 79(2), 453-497
+\item  Hansen PR, Lunde A, Nason JM, 2011. The model confidence set. Econometrica, 79(2), 453-497
 }
 }
